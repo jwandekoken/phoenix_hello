@@ -8,4 +8,6 @@ defmodule HelloWeb.HelloController do
   def show(conn, %{"messenger" => messenger}) do
     render(conn, "show.html", messenger: messenger)
   end
+
+  plug HelloWeb.Plugs.Locale, "pt" when action in [:index]
 end
