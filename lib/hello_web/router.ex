@@ -19,11 +19,17 @@ defmodule HelloWeb.Router do
     get "/", PageController, :index
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
+    # resources "/users", UserController do
+    #   resources "/posts", PostController
+    # end
+    # resources "/reviews", ReviewController
   end
 
   # Other scopes may use custom stacks.
   # scope "/api", HelloWeb do
   #   pipe_through :api
+
+  #   resources "/reviews", ReviewController
   # end
 
   # Enables LiveDashboard only for development

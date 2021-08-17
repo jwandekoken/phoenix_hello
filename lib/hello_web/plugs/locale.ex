@@ -5,7 +5,7 @@ defmodule HelloWeb.Plugs.Locale do
   @locales ["en", "fr", "de", "pt"]
 
   def init(default) do
-    Logger.info "default: #{inspect(default)}"
+    Logger.info("default: #{inspect(default)}")
     default
   end
 
